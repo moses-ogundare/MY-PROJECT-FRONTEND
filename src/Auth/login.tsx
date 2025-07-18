@@ -17,8 +17,8 @@ function Login() {
     }
   }
 
-  const ShopContext = useShopContext()
-  const backendUrl = ShopContext?.backendUrl || ""
+  const Context = useShopContext()
+  const backendUrl = Context?.backendUrl || "https://my-project-backend-nx0l.onrender.com"
   const [email, setEmail ] = useState<string>("")
   const [password, setPassword] = useState<string>("")
   const [loading, setLoading] = useState<boolean>(false)
